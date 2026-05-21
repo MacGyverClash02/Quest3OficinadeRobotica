@@ -1,0 +1,68 @@
+[gd_scene format=3 uid="uid://cuq7087lkrfoc"]
+
+[ext_resource type="Script" uid="uid://rjtsv04mbgou" path="res://Scripts/menuPrincipal.gd" id="1_7y7xk"]
+[ext_resource type="Texture2D" uid="uid://duagrg2jirpot" path="res://Assets/FM.png" id="1_sgs44"]
+[ext_resource type="AudioStream" uid="uid://dwuvc8lmjdd3w" path="res://Assets/Metal_Click.wav" id="3_w3ops"]
+
+[node name="MenuPrincipal" type="Control" unique_id=49719979]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_7y7xk")
+
+[node name="FundoBancada" type="TextureRect" parent="." unique_id=1018939789]
+layout_mode = 0
+offset_right = 1280.0
+offset_bottom = 720.0
+texture = ExtResource("1_sgs44")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="Titulo" type="Node" parent="." unique_id=1721945375]
+
+[node name="FundoTitulo" type="ColorRect" parent="Titulo" unique_id=66758676]
+offset_left = 248.0
+offset_top = 136.0
+offset_right = 1032.0
+offset_bottom = 272.0
+color = Color(0.42071775, 0.23656765, 0.074788906, 1)
+
+[node name="LabelTItulo" type="Label" parent="Titulo/FundoTitulo" unique_id=1905186821]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 70
+text = "OFICINA DE ROBOTÍCA"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BotaoIniciar" type="Button" parent="." unique_id=1798629155]
+layout_mode = 0
+offset_left = 472.0
+offset_top = 320.0
+offset_right = 808.0
+offset_bottom = 400.0
+theme_override_font_sizes/font_size = 50
+text = "Iniciar"
+
+[node name="SomClique" type="AudioStreamPlayer2D" parent="." unique_id=1419032048]
+stream = ExtResource("3_w3ops")
+
+[node name="BotaoFechar" type="Button" parent="." unique_id=1604967986]
+layout_mode = 0
+offset_left = 472.0
+offset_top = 424.0
+offset_right = 808.0
+offset_bottom = 504.0
+theme_override_colors/font_color = Color(0.99999994, 0.242955, 0.20794511, 1)
+theme_override_font_sizes/font_size = 50
+text = "Sair"
+
+[connection signal="pressed" from="BotaoIniciar" to="." method="_on_botao_iniciar_pressed"]
+[connection signal="pressed" from="BotaoFechar" to="." method="_on_botao_fechar_pressed"]

@@ -1,0 +1,63 @@
+[gd_scene format=3 uid="uid://c8eiqxvy7cacf"]
+
+[ext_resource type="Script" uid="uid://bwtuvs4j48ilj" path="res://Scripts/slotmotor.gd" id="1_dek1u"]
+[ext_resource type="Texture2D" uid="uid://hus8qyscip4m" path="res://Assets/FMB.png" id="1_j7qqr"]
+[ext_resource type="PackedScene" uid="uid://bmfgjsm20vdh6" path="res://Cenas/PecaFracao.tscn" id="2_j7qqr"]
+
+[node name="MinigameBateria" type="Control" unique_id=1341779723]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=224211751]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_j7qqr")
+expand_mode = 1
+
+[node name="SlotBateria" type="ColorRect" parent="." unique_id=1660348000]
+layout_mode = 0
+offset_left = 779.0
+offset_top = 164.0
+offset_right = 924.0
+offset_bottom = 431.0
+color = Color(0, 0, 0, 0)
+script = ExtResource("1_dek1u")
+metadata/_edit_group_ = true
+
+[node name="LabelBateria" type="Label" parent="SlotBateria" unique_id=908235494]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="PecaFracao0_50_1" parent="." unique_id=1977712577 instance=ExtResource("2_j7qqr")]
+layout_mode = 1
+offset_left = 370.0
+offset_top = 218.0
+offset_right = -709.0
+offset_bottom = -422.0
+
+[node name="PecaFracao0_25_1" parent="." unique_id=1364520620 instance=ExtResource("2_j7qqr")]
+layout_mode = 1
+offset_left = 196.0
+offset_top = 311.0
+offset_right = -884.0
+offset_bottom = -329.0
+valor_fracao = 0.25
+texto_exibicao = "1/4"
+
+[node name="PecaFracao0_25_2" parent="." unique_id=1412993272 instance=ExtResource("2_j7qqr")]
+layout_mode = 1
+offset_left = 55.0
+offset_top = 138.0
+offset_right = -1025.0
+offset_bottom = -496.0
+valor_fracao = 0.25
+texto_exibicao = "1/4"
