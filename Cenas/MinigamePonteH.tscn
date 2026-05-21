@@ -1,0 +1,65 @@
+[gd_scene format=3 uid="uid://3vbttscegckm"]
+
+[ext_resource type="Script" uid="uid://cankvubnv0pv8" path="res://Scripts/minigameponteh.gd" id="1_o6ncx"]
+
+[node name="MinigamePonteH" type="Control" unique_id=1246532724]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_o6ncx")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1241327498]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+color = Color(0.012617188, 0.012617188, 0.012617188, 1)
+
+[node name="ChaveA" type="CheckButton" parent="." unique_id=341241683]
+layout_mode = 1
+offset_right = 44.0
+offset_bottom = 24.0
+
+[node name="ChaveB" type="CheckButton" parent="." unique_id=2031173698]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -44.0
+offset_bottom = 24.0
+grow_horizontal = 0
+
+[node name="ChaveC" type="CheckButton" parent="." unique_id=1681180860]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -24.0
+offset_right = 44.0
+grow_vertical = 0
+
+[node name="ChaveD" type="CheckButton" parent="." unique_id=2132552123]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -44.0
+offset_top = -24.0
+grow_horizontal = 0
+grow_vertical = 0
+
+[node name="MotorSprite" type="Sprite2D" parent="." unique_id=262653871]
+
+[node name="LabelStatus" type="Label" parent="." unique_id=696777849]
+layout_mode = 0
+offset_left = 656.0
+offset_top = 309.0
+offset_right = 722.0
+offset_bottom = 332.0
+text = "PARADO"
+horizontal_alignment = 1
+vertical_alignment = 1

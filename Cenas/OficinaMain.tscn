@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://bmp0brboexjxr"]
 
-[ext_resource type="Script" uid="uid://b278g75txwyg1" path="res://Cenas/oficinamain.gd" id="1_7ogfj"]
+[ext_resource type="Script" uid="uid://b278g75txwyg1" path="res://Scripts/oficinamain.gd" id="1_7ogfj"]
 [ext_resource type="Texture2D" uid="uid://dns12q31qlas0" path="res://Assets/FPG.png" id="1_ufg7t"]
 
 [node name="OficinaMain" type="Control" unique_id=724995772]

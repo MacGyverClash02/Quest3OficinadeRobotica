@@ -2,14 +2,17 @@
 
 [ext_resource type="Script" uid="uid://b28ptpfffbm57" path="res://Scripts/pecafracao.gd" id="1_xjjq8"]
 
-[node name="PecaFracao" type="Control" unique_id=1977712577]
-custom_minimum_size = Vector2(200, 80)
-layout_mode = 3
+[node name="PecaFracao" type="TextureRect" unique_id=489736719]
+custom_minimum_size = Vector2(120, 60)
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_right = -1160.0
+offset_bottom = -660.0
 grow_horizontal = 2
 grow_vertical = 2
+expand_mode = 1
+stretch_mode = 5
 script = ExtResource("1_xjjq8")
 metadata/_edit_group_ = true
 
