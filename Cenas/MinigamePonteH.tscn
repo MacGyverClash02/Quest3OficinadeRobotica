@@ -1,6 +1,8 @@
 [gd_scene format=3 uid="uid://3vbttscegckm"]
 
 [ext_resource type="Script" uid="uid://cankvubnv0pv8" path="res://Scripts/minigameponteh.gd" id="1_o6ncx"]
+[ext_resource type="PackedScene" uid="uid://u0nwch6ksugc" path="res://Cenas/CaixaDialogo.tscn" id="2_xgi5m"]
+[ext_resource type="Texture2D" uid="uid://deg07y7wqe1mp" path="res://Assets/FMPH.png" id="2_yb2hf"]
 
 [node name="MinigamePonteH" type="Control" unique_id=1246532724]
 layout_mode = 3
@@ -11,24 +13,38 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_o6ncx")
 
-[node name="ColorRect" type="ColorRect" parent="." unique_id=1241327498]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
-color = Color(0.012617188, 0.012617188, 0.012617188, 1)
+[node name="CaixaDialogo" parent="." unique_id=2091381220 instance=ExtResource("2_xgi5m")]
+
+[node name="ColorRect" type="TextureRect" parent="." unique_id=412392742]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_yb2hf")
+expand_mode = 1
 
 [node name="ChaveA" type="CheckButton" parent="." unique_id=341241683]
 layout_mode = 1
-offset_right = 44.0
-offset_bottom = 24.0
+anchors_preset = -1
+anchor_right = 0.034
+anchor_bottom = 0.033
+offset_left = 373.0
+offset_top = 168.0
+offset_right = 373.47998
+offset_bottom = 196.24
 
 [node name="ChaveB" type="CheckButton" parent="." unique_id=2031173698]
 layout_mode = 1
-anchors_preset = 1
-anchor_left = 1.0
+anchors_preset = -1
+anchor_left = 0.92100006
 anchor_right = 1.0
-offset_left = -44.0
-offset_bottom = 24.0
+anchor_bottom = 0.079
+offset_left = -136.88013
+offset_top = 136.0
+offset_right = -194.0
+offset_bottom = 142.12
 grow_horizontal = 0
 
 [node name="ChaveC" type="CheckButton" parent="." unique_id=1681180860]
@@ -36,8 +52,10 @@ layout_mode = 1
 anchors_preset = 2
 anchor_top = 1.0
 anchor_bottom = 1.0
-offset_top = -24.0
-offset_right = 44.0
+offset_left = 375.0
+offset_top = -260.0
+offset_right = 419.0
+offset_bottom = -207.0
 grow_vertical = 0
 
 [node name="ChaveD" type="CheckButton" parent="." unique_id=2132552123]
@@ -47,19 +65,30 @@ anchor_left = 1.0
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = -44.0
-offset_top = -24.0
+offset_left = -232.0
+offset_top = -258.0
+offset_right = -188.0
+offset_bottom = -198.0
 grow_horizontal = 0
 grow_vertical = 0
 
-[node name="MotorSprite" type="Sprite2D" parent="." unique_id=262653871]
-
 [node name="LabelStatus" type="Label" parent="." unique_id=696777849]
 layout_mode = 0
-offset_left = 656.0
-offset_top = 309.0
-offset_right = 722.0
-offset_bottom = 332.0
+offset_left = 611.0
+offset_top = 349.0
+offset_right = 677.0
+offset_bottom = 372.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 5
 text = "PARADO"
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="LabelEquacao" type="Label" parent="." unique_id=704384711]
+layout_mode = 0
+offset_left = 505.0
+offset_top = 289.0
+offset_right = 773.0
+offset_bottom = 312.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 5

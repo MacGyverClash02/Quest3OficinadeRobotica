@@ -1,0 +1,54 @@
+[gd_scene format=3 uid="uid://d1sbi1xphc106"]
+
+[ext_resource type="Script" uid="uid://du7orb8aqq25b" path="res://Scripts/minigameprotoboard.gd" id="1_f1ifa"]
+[ext_resource type="PackedScene" uid="uid://u0nwch6ksugc" path="res://Cenas/CaixaDialogo.tscn" id="2_peyk7"]
+
+[node name="MinigameProtoboard" type="Control" unique_id=872994970]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_f1ifa")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1964584047]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.15294118, 0.15294118, 0.8745098, 1)
+
+[node name="LabelInstrucao" type="Label" parent="." unique_id=1150812788]
+layout_mode = 0
+offset_left = 504.0
+offset_top = 160.0
+offset_right = 544.0
+offset_bottom = 183.0
+text = "A"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="GridContainer" type="GridContainer" parent="." unique_id=863170190]
+layout_mode = 0
+offset_left = 504.0
+offset_top = 200.0
+offset_right = 584.0
+offset_bottom = 240.0
+theme_override_constants/h_separation = 10
+theme_override_constants/v_separation = 10
+columns = 4
+
+[node name="LabelStatus" type="Label" parent="." unique_id=1397041241]
+layout_mode = 0
+offset_left = 504.0
+offset_top = 336.0
+offset_right = 544.0
+offset_bottom = 359.0
+text = "A"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CaixaDialogo" parent="." unique_id=2091381220 instance=ExtResource("2_peyk7")]

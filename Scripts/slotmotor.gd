@@ -42,11 +42,13 @@ func _verificar_status():
 		
 	elif total_energia > 1.0:
 		label.text = "SOBRECARGA! Reiniciando..."
-		# Opcional: Se o seu slot tiver cor, pode piscar de vermelho aqui
+		
+		# Pinta o fundo do slot de vermelho
 		color = Color.INDIAN_RED 
 		
-		# 1. Espera 2 segundos para a criança ler que errou
-		await get_tree().create_timer(2.0).timeout
+		# PINTA A BARRINHA DE VERMELHO TAMBÉM! (O inseto morre aqui)
+		if $CargaVisual != null:
+			$CargaVisual.color = Color.INDIAN_RED 
 		
-		# 2. Recarrega a cena atual, resetando todas as peças!
+		await get_tree().create_timer(2.0).timeout
 		get_tree().reload_current_scene()

@@ -1,0 +1,60 @@
+[gd_scene format=3 uid="uid://c5fowaf4jbtqk"]
+
+[ext_resource type="Script" uid="uid://b2ax1d4yxgg46" path="res://Scripts/minigameengrenagem.gd" id="1_om4ro"]
+[ext_resource type="PackedScene" uid="uid://u0nwch6ksugc" path="res://Cenas/CaixaDialogo.tscn" id="2_48q5c"]
+
+[node name="MinigameEngrenagem" type="Control" unique_id=1297059690]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_om4ro")
+
+[node name="CaixaDialogo" parent="." unique_id=2091381220 instance=ExtResource("2_48q5c")]
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1539929961]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.15294118, 0.15294118, 0.8745098, 1)
+
+[node name="LabelDescricao" type="Label" parent="." unique_id=1173893856]
+layout_mode = 0
+offset_left = 328.0
+offset_top = 16.0
+offset_right = 368.0
+offset_bottom = 39.0
+text = "A"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ContainerBotoes" type="HBoxContainer" parent="." unique_id=916176285]
+layout_mode = 0
+offset_left = 376.0
+offset_top = 160.0
+offset_right = 416.0
+offset_bottom = 200.0
+
+[node name="BotaoOpcao1" type="Button" parent="ContainerBotoes" unique_id=1044188667]
+layout_mode = 2
+
+[node name="BotaoOpcao2" type="Button" parent="ContainerBotoes" unique_id=122676781]
+layout_mode = 2
+
+[node name="BotaoOpcao3" type="Button" parent="ContainerBotoes" unique_id=588598278]
+layout_mode = 2
+
+[node name="LabelStatus" type="Label" parent="." unique_id=1914080624]
+layout_mode = 0
+offset_left = 344.0
+offset_top = 64.0
+offset_right = 384.0
+offset_bottom = 87.0
+text = "A"
+horizontal_alignment = 1
+vertical_alignment = 1

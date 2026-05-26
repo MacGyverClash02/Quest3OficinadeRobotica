@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://d1g3bwgjgrlxi" path="res://Scripts/minigamebateria.gd" id="1_afykb"]
 [ext_resource type="Script" uid="uid://bwtuvs4j48ilj" path="res://Scripts/slotmotor.gd" id="1_dek1u"]
 [ext_resource type="Texture2D" uid="uid://hus8qyscip4m" path="res://Assets/FMB.png" id="1_j7qqr"]
+[ext_resource type="PackedScene" uid="uid://u0nwch6ksugc" path="res://Cenas/CaixaDialogo.tscn" id="2_afykb"]
 
 [node name="MinigameBateria" type="Control" unique_id=1341779723]
 layout_mode = 3
@@ -12,6 +13,8 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_afykb")
+
+[node name="CaixaDialogo" parent="." unique_id=2091381220 instance=ExtResource("2_afykb")]
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=224211751]
 layout_mode = 1

@@ -1,0 +1,69 @@
+[gd_scene format=3 uid="uid://b4oeu4gsnhd1w"]
+
+[ext_resource type="Script" uid="uid://c06ttf2tbly4f" path="res://Scripts/minigameradar.gd" id="1_eli3e"]
+[ext_resource type="PackedScene" uid="uid://u0nwch6ksugc" path="res://Cenas/CaixaDialogo.tscn" id="2_jyt8o"]
+
+[node name="MinigameRadar" type="Control" unique_id=275559722]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_eli3e")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=669671173]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.15294118, 0.15294118, 0.8745098, 1)
+
+[node name="LabelHistoria" type="Label" parent="." unique_id=1076259580]
+layout_mode = 0
+offset_left = 352.0
+offset_top = 144.0
+offset_right = 392.0
+offset_bottom = 167.0
+text = "A"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="LabelSequencia" type="Label" parent="." unique_id=479437088]
+layout_mode = 0
+offset_left = 352.0
+offset_top = 192.0
+offset_right = 392.0
+offset_bottom = 215.0
+text = "A"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=987857941]
+layout_mode = 0
+offset_left = 328.0
+offset_top = 232.0
+offset_right = 456.0
+offset_bottom = 288.0
+
+[node name="LineEditResposta" type="LineEdit" parent="HBoxContainer" unique_id=535783125]
+layout_mode = 2
+virtual_keyboard_type = 2
+
+[node name="BotaoEscanear" type="Button" parent="HBoxContainer" unique_id=1951743760]
+layout_mode = 2
+text = "Escanear"
+
+[node name="LabelStatus" type="Label" parent="." unique_id=1645813317]
+layout_mode = 0
+offset_left = 352.0
+offset_top = 304.0
+offset_right = 392.0
+offset_bottom = 327.0
+text = "A"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CaixaDialogo" parent="." unique_id=2091381220 instance=ExtResource("2_jyt8o")]
