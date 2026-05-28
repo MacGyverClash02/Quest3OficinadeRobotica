@@ -13,6 +13,9 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_7y7xk")
 
+[node name="SomClique" type="AudioStreamPlayer2D" parent="." unique_id=1419032048]
+stream = ExtResource("3_w3ops")
+
 [node name="FundoBancada" type="TextureRect" parent="." unique_id=1018939789]
 layout_mode = 0
 offset_right = 1280.0
@@ -50,9 +53,6 @@ offset_right = 808.0
 offset_bottom = 400.0
 theme_override_font_sizes/font_size = 50
 text = "Iniciar"
-
-[node name="SomClique" type="AudioStreamPlayer2D" parent="." unique_id=1419032048]
-stream = ExtResource("3_w3ops")
 
 [node name="BotaoFechar" type="Button" parent="." unique_id=1604967986]
 layout_mode = 0

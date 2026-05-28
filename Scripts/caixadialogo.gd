@@ -3,8 +3,8 @@ extends CanvasLayer
 # Esse sinal avisa o minigame que a criança terminou de ler
 signal tutorial_concluido 
 
-@onready var label_texto = $PainelTexto/LabelTexto
-@onready var botao_proximo = $PainelTexto/BotaoProximo
+@onready var label_texto = $FundoEscuro/PainelContainer/Margem/VBoxContainer/LabelTexto
+@onready var botao_proximo = $FundoEscuro/PainelContainer/Margem/VBoxContainer/BotaoProximo
 @onready var fundo_escuro = $FundoEscuro
 
 var falas: Array = []
