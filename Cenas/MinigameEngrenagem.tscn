@@ -26,12 +26,20 @@ grow_vertical = 2
 texture = ExtResource("3_e6yg3")
 expand_mode = 1
 
+[node name="ColorRect" type="ColorRect" parent="ColorRect" unique_id=241137496]
+layout_mode = 0
+offset_left = 376.0
+offset_top = 24.0
+offset_right = 1240.0
+offset_bottom = 184.0
+color = Color(0, 0, 0, 0.5882353)
+
 [node name="LabelDescricao" type="Label" parent="." unique_id=1173893856]
 layout_mode = 0
-offset_left = 648.0
+offset_left = 416.0
 offset_top = 32.0
-offset_right = 688.0
-offset_bottom = 55.0
+offset_right = 456.0
+offset_bottom = 67.0
 text = "A"
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -54,10 +62,10 @@ layout_mode = 2
 
 [node name="LabelStatus" type="Label" parent="." unique_id=1914080624]
 layout_mode = 0
-offset_left = 784.0
-offset_top = 144.0
-offset_right = 824.0
-offset_bottom = 167.0
+offset_left = 208.0
+offset_top = 184.0
+offset_right = 248.0
+offset_bottom = 219.0
 text = "A"
 horizontal_alignment = 1
 vertical_alignment = 1

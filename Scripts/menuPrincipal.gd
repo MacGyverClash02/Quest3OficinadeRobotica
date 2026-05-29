@@ -12,3 +12,9 @@ func _on_botao_fechar_pressed():
 	$SomClique.play()
 	await get_tree().create_timer(0.3).timeout
 	get_tree().quit()
+
+
+func _on_botao_creditos_pressed() -> void:
+	$SomClique.play()
+	await get_tree().create_timer(0.3).timeout
+	get_tree().change_scene_to_file("res://Cenas/Creditos.tscn")

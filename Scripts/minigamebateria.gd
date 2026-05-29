@@ -24,8 +24,8 @@ func gerar_pecas():
 	var mapa_texturas = {
 		0.5: preload("res://Assets/Bateria1_2.PNG"),
 		0.25: preload("res://Assets/Bateria1_4.PNG"),
-		0.6: preload("res://Assets/Bateria1_0.PNG"),
-		0.3: preload("res://Assets/Bateria1_0.PNG")
+		0.6: preload("res://Assets/Bateria1_3_5.png"),
+		0.3: preload("res://Assets/Bateria1__3_10.PNG")
 	}
 	
 	for i in range(valores_baterias.size()):

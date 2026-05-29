@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://rjtsv04mbgou" path="res://Scripts/menuPrincipal.gd" id="1_7y7xk"]
 [ext_resource type="Texture2D" uid="uid://duagrg2jirpot" path="res://Assets/FM.png" id="1_sgs44"]
 [ext_resource type="AudioStream" uid="uid://dwuvc8lmjdd3w" path="res://Assets/Metal_Click.wav" id="3_w3ops"]
+[ext_resource type="FontFile" uid="uid://fd6fve5g27d6" path="res://Assets/VT323-Regular.ttf" id="4_hiv3c"]
 
 [node name="MenuPrincipal" type="Control" unique_id=49719979]
 layout_mode = 3
@@ -40,8 +41,9 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_font_sizes/font_size = 70
-text = "OFICINA DE ROBOTÍCA"
+theme_override_fonts/font = ExtResource("4_hiv3c")
+theme_override_font_sizes/font_size = 80
+text = "Oficina De Robotíca"
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -51,18 +53,32 @@ offset_left = 472.0
 offset_top = 320.0
 offset_right = 808.0
 offset_bottom = 400.0
+theme_override_fonts/font = ExtResource("4_hiv3c")
 theme_override_font_sizes/font_size = 50
 text = "Iniciar"
 
 [node name="BotaoFechar" type="Button" parent="." unique_id=1604967986]
 layout_mode = 0
 offset_left = 472.0
-offset_top = 424.0
+offset_top = 512.0
 offset_right = 808.0
-offset_bottom = 504.0
+offset_bottom = 592.0
 theme_override_colors/font_color = Color(0.99999994, 0.242955, 0.20794511, 1)
+theme_override_fonts/font = ExtResource("4_hiv3c")
 theme_override_font_sizes/font_size = 50
 text = "Sair"
 
+[node name="BotaoCreditos" type="Button" parent="." unique_id=102179905]
+layout_mode = 0
+offset_left = 472.0
+offset_top = 416.0
+offset_right = 808.0
+offset_bottom = 496.0
+theme_override_colors/font_color = Color(0.05882353, 0.5254902, 0.8509804, 1)
+theme_override_fonts/font = ExtResource("4_hiv3c")
+theme_override_font_sizes/font_size = 50
+text = "Creditos"
+
 [connection signal="pressed" from="BotaoIniciar" to="." method="_on_botao_iniciar_pressed"]
 [connection signal="pressed" from="BotaoFechar" to="." method="_on_botao_fechar_pressed"]
+[connection signal="pressed" from="BotaoCreditos" to="." method="_on_botao_creditos_pressed"]

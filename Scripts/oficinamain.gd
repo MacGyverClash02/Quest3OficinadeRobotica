@@ -67,6 +67,13 @@ func _atualizar_botoes_por_progresso():
 		_animar_botao_atual(botao_radar)
 	elif Global.progresso == 4 and not Global.protoboard_consertado:
 		_animar_botao_atual(botao_protoboard)
+	elif Global.progresso >= 5:
+		# Jogo finalizado! Esconde todas as peças soltas.
+		for btn in todos_botoes:
+			btn.visible = false
+			
+		# ADICIONE ESTA LINHA AQUI:
+		_tocar_vitoria_final()
 
 func _animar_botao_atual(botao: TextureButton):
 	# MODIFICAÇÃO: Garante que o botão reage ao mouse ao ficar ativo
@@ -97,3 +104,29 @@ func _tocar_dialogo_se_necessario():
 		botao_bateria.mouse_filter = Control.MOUSE_FILTER_STOP
 		if tween_destaque:
 			tween_destaque.play()
+
+func _tocar_vitoria_final():
+	# Mensagem de celebração para a criança
+	var texto_vitoria = [
+		"INCRÍVEL! O Robô Seguidor de Linha está totalmente consertado e pronto para a pista!",
+		"Os motores estão firmes, o radar está calibrado e o cérebro dele está brilhando!",
+		"Parabéns, jovem engenheiro! Você completou todos os desafios com maestria.",
+		"Obrigado por salvar a Oficina Maker! Até a próxima missão!"
+	]
+	
+	caixa_dialogo.iniciar_dialogo(texto_vitoria)
+	
+	# Espera o jogador ler todo o diálogo de vitória e fechar a caixinha
+	await caixa_dialogo.tutorial_concluido
+	
+	# TRUQUE DE BANCA: Limpa a memória do jogo antes de voltar ao menu.
+	# Se os avaliadores clicarem em "Jogar" de novo, o jogo recomeça do zero perfeitamente!
+	Global.progresso = 0
+	Global.bateria_consertada = false
+	Global.ponte_h_consertada = false
+	Global.engrenagem_consertada = false
+	Global.radar_consertado = false
+	Global.protoboard_consertado = false
+	
+	# Retorna ao seu Menu Principal (Ajuste o caminho se sua cena estiver na raiz)
+	get_tree().change_scene_to_file("res://Cenas/MenuPrincipal.tscn")

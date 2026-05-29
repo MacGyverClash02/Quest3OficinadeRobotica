@@ -87,6 +87,8 @@ func _vencer_minigame():
 	label_status.modulate = Color.GREEN
 	label_equacao.modulate = Color.GREEN
 	
-	# Troque "OficinaMain.tscn" pelo nome da sua cena principal
+	Global.ponte_h_consertada = true
+	Global.progresso = 2
+	
 	await get_tree().create_timer(2.0).timeout
 	get_tree().change_scene_to_file("res://Cenas/OficinaMain.tscn")

@@ -27,9 +27,9 @@ stretch_mode = 5
 [node name="LabelInstrucao" type="Label" parent="." unique_id=1150812788]
 layout_mode = 0
 offset_left = 24.0
-offset_top = 48.0
+offset_top = 40.0
 offset_right = 64.0
-offset_bottom = 71.0
+offset_bottom = 75.0
 theme_override_colors/font_color = Color(0, 0.80784315, 1, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 5

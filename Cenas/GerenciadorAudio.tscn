@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://1ukuhmgnbiy2"]
+
+[ext_resource type="Script" uid="uid://dtubbrpw3ydk1" path="res://Scripts/gerenciadordeaudio.gd" id="1_4c2w5"]
+[ext_resource type="AudioStream" uid="uid://bprx8ootigugs" path="res://Assets/fassounds-lovely-chill-background-lofi-408669.mp3" id="1_r8i65"]
+[ext_resource type="AudioStream" uid="uid://dwuvc8lmjdd3w" path="res://Assets/Metal_Click.wav" id="3_1tibj"]
+
+[node name="GerenciadorAudio" type="Node" unique_id=1869737102]
+script = ExtResource("1_4c2w5")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=1783855054]
+stream = ExtResource("1_r8i65")
+autoplay = true
+
+[node name="PlayerClick" type="AudioStreamPlayer2D" parent="." unique_id=879606218]
+stream = ExtResource("3_1tibj")

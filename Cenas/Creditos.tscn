@@ -1,0 +1,52 @@
+[gd_scene format=3 uid="uid://b1kplpeyjuvd7"]
+
+[ext_resource type="Script" uid="uid://c4wm4yjr60qyh" path="res://Scripts/creditos.gd" id="1_7g1px"]
+[ext_resource type="FontFile" uid="uid://fd6fve5g27d6" path="res://Assets/VT323-Regular.ttf" id="2_wm01e"]
+
+[node name="Creditos" type="Control" unique_id=1323444633]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_7g1px")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=345345891]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1094003745]
+layout_mode = 0
+offset_left = 512.0
+offset_right = 768.0
+offset_bottom = 602.0
+
+[node name="Label" type="Label" parent="VBoxContainer" unique_id=1699181526]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_wm01e")
+theme_override_font_sizes/font_size = 32
+text = "Oficina De Robotica
+
+Desenvolvedores:
+João Pedro Eugênio.
+Victor Manoel
+
+Orientador / Disciplina:
+David Martins Leite (Experimentação de Prototipos)
+
+Assets Visuais / Áudio: 
+Arthur Mendes/ \"Pixbay\""
+autowrap_mode = 2
+
+[node name="BotaoVoltar" type="Button" parent="VBoxContainer" unique_id=884166239]
+layout_mode = 2
+size_flags_horizontal = 8
+theme_override_fonts/font = ExtResource("2_wm01e")
+theme_override_font_sizes/font_size = 32
+text = "Voltar"

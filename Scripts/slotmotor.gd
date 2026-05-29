@@ -36,17 +36,19 @@ func _verificar_status():
 	
 	if total_energia == 1.0:
 		label.text = "ENERGIA 100%!"
+		
+		# A MÁGICA ACONTECE AQUI:
 		Global.bateria_consertada = true
+		Global.progresso = 1
+		
 		await get_tree().create_timer(2.0).timeout
 		get_tree().change_scene_to_file("res://Cenas/OficinaMain.tscn")
 		
 	elif total_energia > 1.0:
 		label.text = "SOBRECARGA! Reiniciando..."
 		
-		# Pinta o fundo do slot de vermelho
 		color = Color.INDIAN_RED 
 		
-		# PINTA A BARRINHA DE VERMELHO TAMBÉM! (O inseto morre aqui)
 		if $CargaVisual != null:
 			$CargaVisual.color = Color.INDIAN_RED 
 		
